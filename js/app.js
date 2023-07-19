@@ -17,18 +17,6 @@ window.addEventListener('mousemove', e => {
   })
 })
 
-const toggler = document.querySelector('.menu__toggler')
-const menu = document.querySelector('.menu')
-
-/*
- * Toggles on and off the 'active' class on the menu
- * and the toggler button.
- */
-toggler.addEventListener('click', () => {
-  toggler.classList.toggle('active')
-  menu.classList.toggle('active')
-})
-
 // Hide picture to picture mode
 const isFirefox = typeof InstallTrigger !== 'undefined'
 
@@ -38,4 +26,13 @@ if (isFirefox) {
   for (let i = 0; i < videoElements.length; i++) {
     videoElements[i].setAttribute('disablepictureinpicture', true)
   }
+}
+
+// Side Menu Show
+const menuBtn = document.querySelector('.menu__btn')
+const sliderMenu = document.getElementById('sliderMenu')
+
+function toggleMenu () {
+  sliderMenu.classList.toggle('open')
+  menuBtn.classList.toggle('menu__transparent')
 }

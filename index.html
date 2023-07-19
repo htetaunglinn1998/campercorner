@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAMPER CORNER</title>
+    <title>Forest Queen</title>
     <link rel="stylesheet" href="./styles/index.css">
 
     <!-- Google fonts -->
@@ -31,68 +31,70 @@
 </head>
 
 <body>
-    <main>
 
-        <!-- Menu Section -->
-        <div class="menu">
-            <div class="title">
-                <img src="./assets/menu-bar.png" alt="menu bar" class="menu__bar">
-            </div>
-            <ul class="nav">
-                <li><img src="./assets/logo.svg" alt="logo" class="logo"></li>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="equipment.html" class="link">Camping Equipment</a></li>
-                <li><a href="furniture.html" class="link">Funiture</a></li>
-                <li><a href="review.html" class="link">Review</a></li>
-                <li><a href="basket.html" class="link">Basket</a></li>
-                <li><a href="offer.html" class="link">Offer</a></li>
+    <header class="header__section" id="header">
+        <div class="nav__item">
+            <ul class="nav__link">
+                <li class="link"><a href="product.html">Product</a></li>
+                <li class="link"><a href="furniture.html">Furniture</a></li>
+                <li class="link"><a href="review.html">Review</a></li>
+                <li class="link"><a href="package.html">Package</a></li>
             </ul>
         </div>
+        <div class="nav__item logo__container">
+            <a href="index.html"><img src="./assets/logo.svg" alt="forest king logo" class="logo"></a>
+        </div>
+        <div class="nav__item right__nav">
+            <a href="#" class="nav__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="./cart.html" class="nav__icon cart__icon"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="#" class="support__button">Support</a>
+        </div>
+    </header>
 
+    <!-- Responsive humburger button -->
+    <nav class="humburger__menu">
+        <div class="nav__item logo__container">
+            <a href="index.html"><img src="./assets/logo.svg" alt="forest king logo" class="logo"></a>
+        </div>
+        <div onclick="toggleMenu();" class="menu__btn">
+            <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
+        </div>
+    </nav>
+
+    <aside id="sliderMenu" class="slider__menu">
+        <ul class="slider__link">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="product.html">Product</a></li>
+            <li class="link"><a href="furniture.html">Furniture</a></li>
+            <li class="link"><a href="review.html">Review</a></li>
+            <li class="link"><a href="package.html">Package</a></li>
+        </ul>
+    </aside>
+
+    <main>
         <!-- Hero Section -->
         <section class="hero__section">
-            <video loop autoplay muted
-                src="https://res.cloudinary.com/dqu7jnyue/video/upload/v1689213843/Assignment/background_h6ydns.mp4"
-                class="video__background">
-            </video>
-            <div class="hero__title">
-                <h1>CAMPER CORNER</h1>
-                <h2>
-                    Quality camping life with us
-                </h2>
+            <div class="intro__container parallax" data-speedx=".2" data-speedy="0.15">
+                <p>Nomo J62</p>
+                <h1 class="intro__title">Meet the latest Product <br>From Forest Queen</h1>
+                <p>Step into the untamed wilderness with Nomo J62. <br> Adventure awaits!</p>
+                <div class="intro__button__container">
+                    <a href="#" class="intro__button">Buy Now</a>
+                    <a href="#" class="intro__button">See More</a>
+                </div>
             </div>
-            <img src="./assets/sunray.png" alt="sunray" class="sunlight">
-            <img src="./assets/1.png" alt="middle" data-speedx="0.16" data-speedy="0.22" class="parallax bush1">
-            <img src="./assets/2.png" alt="left corner" data-speedx="0.1" data-speedy="0.16" class="parallax bush2">
-
-
-            <!-- Animation start -->
-            <div class="animation__container">
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-                <div class="firefly"></div>
-            </div>
-            <!-- Animation end -->
         </section>
 
 
         <!-- Best Seller Tent Section -->
         <section class="sale__section">
             <div class="bestseller__container">
-
-
 
                 <div class="swiper__container">
                     <p class="bestseller__tag">Best Seller</p>
@@ -107,6 +109,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <img src="./assets/bestseller/3.png" alt="tent" class="bestseller__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/bestseller/4.png" alt="tent" class="bestseller__img">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -164,8 +169,6 @@
                         </div>
                     </div>
 
-                    <img src="./assets/card_bush.png" data-speedx="0.1" data-speedy="0.2" alt="card bush"
-                        class="parallax card__bush">
                 </div>
             </div>
         </section>
@@ -183,7 +186,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -194,7 +197,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -205,7 +208,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -216,7 +219,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -227,7 +230,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -238,7 +241,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -249,7 +252,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
                 <div class="grid__item">
@@ -260,7 +263,7 @@
                     <hr>
                     <div class="shop__container stock__buttons">
                         <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                        <p></i>Free Shipping</p>
+                        <p>Free Shipping</p>
                     </div>
                 </div>
             </div>

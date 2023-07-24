@@ -63,7 +63,8 @@ li {
 }
 
 .header__section.hide {
-  top: -100px; /* Move the header out of the view */
+  top: -100px;
+  /* Move the header out of the view */
 }
 
 .humburger__menu {
@@ -152,7 +153,7 @@ li {
 }
 
 .menu__transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .slider__menu.open {
@@ -544,21 +545,17 @@ li {
 .brand__slider__section::before {
   top: 0;
   left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    var(--secondary)
-  );
+  background: linear-gradient(to left,
+      rgba(255, 255, 255, 0),
+      var(--secondary));
 }
 
 .brand__slider__section::after {
   top: 0;
   right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    var(--secondary)
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0),
+      var(--secondary));
 }
 
 /* .brand__slider__section:hover .logo__slide {
@@ -597,6 +594,7 @@ li {
 .subscribe__background {
   position: absolute;
   object-fit: cover;
+  object-position: left bottom;
   width: 100%;
   height: 100%;
   top: 0;
@@ -606,8 +604,8 @@ li {
 /* Footer Section */
 .footer__section {
   width: 100%;
-  padding: 2% 4%;
-  background: linear-gradient(to bottom, #222831ff, var(--third));
+  padding: 1rem 4% 4rem;
+  background: linear-gradient(to bottom, rgb(34, 40, 49), var(--third));
   color: white;
 }
 
@@ -667,8 +665,10 @@ li {
   font-size: 2.5rem;
   color: var(--logoColor);
 }
+
 /* SM */
 @media screen and (min-width: 640px) {
+
   /* Hero Section */
   .bush1 {
     display: block;
@@ -687,6 +687,7 @@ li {
 
 /* MD */
 @media screen and (min-width: 768px) {
+
   /* hero section */
   .hero__section {
     flex-direction: row;
@@ -724,6 +725,7 @@ li {
 
 /* LG */
 @media screen and (min-width: 1024px) {
+
   /* header Section */
   .slider__menu {
     display: none;
@@ -754,6 +756,7 @@ li {
 
 /* XL */
 @media screen and (min-width: 1280px) {
+
   /* Equipment section */
   .equipment__grid {
     grid-template-columns: auto auto auto auto;

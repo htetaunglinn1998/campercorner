@@ -2,14 +2,22 @@ function toggleMenu () {
   // Side Menu Show
   const menuBtn = document.querySelector('.menu__btn')
   const sliderMenu = document.getElementById('sliderMenu')
-
-  console.log(menuBtn)
-
   sliderMenu.classList.toggle('open')
   menuBtn.classList.toggle('menu__transparent')
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Function to hide the loading screen
+  function hideLoadingScreen () {
+    const loadingScreen = document.getElementById('loader__container')
+    console.log(loadingScreen)
+    loadingScreen.style.display = 'none'
+  }
+
+  // Call the hideLoadingScreen function when the content is fully loaded
+  hideLoadingScreen()
+
+  // Parallax effect
   const parallax_el = document.querySelectorAll('.parallax')
 
   let xValue = 0,

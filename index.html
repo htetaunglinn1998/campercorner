@@ -33,6 +33,18 @@
 <body>
     <div id="header__placeholder"></div>
 
+    <!-- Loader Section -->
+    <div class="loader__container" id="loader__container">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
     <main>
         <!-- Hero Section -->
         <section class="hero__section">
@@ -264,9 +276,9 @@
         });
 
         $(function () {
-            $("#header__placeholder").load("header.html");
-            $("#footer__placeholder").load("footer.html");
-        });
+            $('#header__placeholder').load('header.html')
+            $('#footer__placeholder').load('footer.html')
+        })
     </script>
 
 </body>

@@ -1,0 +1,60 @@
+<header>
+  <div class="header__section" id="header">
+    <div class="nav__item">
+      <ul class="nav__link">
+        <li class="link"><a href="product.html">Product</a></li>
+        <li class="link"><a href="furniture.html">Furniture</a></li>
+        <li class="link"><a href="review.html">Review</a></li>
+        <li class="link"><a href="package.html">Package</a></li>
+      </ul>
+    </div>
+    <div class="nav__item logo__container">
+      <a href="index.html">
+        <img src="./assets/logo.svg" alt="forest king logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav__item right__nav">
+      <a href="#" class="nav__icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="./cart.html" class="nav__icon cart__icon"><i class="fa-solid fa-cart-plus"></i></a>
+      <a href="#" class="support__button">Support</a>
+    </div>
+  </div>
+
+  <!-- Responsive humburger button -->
+  <nav class="humburger__menu">
+    <div class="nav__item logo__container">
+      <a href="index.html"><img src="./assets/logo.svg" alt="forest king logo" class="logo" /></a>
+    </div>
+    <div onclick="toggleMenu();" class="menu__btn">
+      <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+        <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+        <path class="line middle" d="m 70,50 h -40" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+      </svg>
+    </div>
+  </nav>
+
+  <aside id="sliderMenu" class="slider__menu">
+    <ul class="slider__link">
+      <li class="link">
+        <a href="index.html"><img src="./assets/icons/1.png" alt="home" class="slider__icon" />Home</a>
+      </li>
+      <li class="link">
+        <a href="product.html"><img src="./assets/icons/2.png" alt="product" class="slider__icon" />Product</a>
+      </li>
+      <li class="link">
+        <a href="furniture.html"><img src="./assets/icons/3.png" alt="furniture" class="slider__icon" />Furniture</a>
+      </li>
+      <li class="link">
+        <a href="review.html"><img src="./assets/icons/4.png" alt="review" class="slider__icon" />Review</a>
+      </li>
+      <li class="link">
+        <a href="package.html"><img src="./assets/icons/5.png" alt="package" class="slider__icon" />Package</a>
+      </li>
+      <li class="link">
+        <a href="cart.html"><img src="./assets/icons/6.png" alt="cart" class="slider__icon" />Cart</a>
+      </li>
+    </ul>
+  </aside>
+</header>

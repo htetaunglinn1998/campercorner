@@ -1,7 +1,7 @@
 :root {
   --primary: #0c2123;
   --secondary: #eeeeee;
-  --third: #1b1d1f;
+  --third: #161718;
   --logoColor: #EA4E27;
   --primaryFont: "Roboto", sans-serif;
   --secondaryFont: "Oswald", sans-serif;
@@ -351,7 +351,7 @@ li {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 180px;
   height: 100%;
 }
 
@@ -586,6 +586,10 @@ li {
   transition: all 0.3s ease-out;
 }
 
+.grid__item del {
+  color: var(--logoColor);
+}
+
 .grid__item:hover {
   transform: scale(102%);
 }
@@ -688,6 +692,52 @@ li {
   }
 }
 
+/* Review Section  */
+
+.review__section {
+  padding: 5rem 0;
+  background-color: var(--secondary);
+}
+
+.swiper-wrapper {
+  padding: 2rem 0;
+}
+
+.review__swiper {
+  width: 95%;
+}
+
+.review__slide {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.review__slide>* {
+  margin-bottom: 1.2rem;
+}
+
+.review__portrait {
+  width: 150px;
+}
+
+.review__quote {
+  width: 30px;
+}
+
+.reviewer {
+  font-weight: 500;
+}
+
+.review__next,
+.review__prev {
+  color: var(--logoColor) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--logoColor) !important;
+}
+
+
 /* Subscribe section */
 .subscribe__section {
   position: relative;
@@ -771,6 +821,7 @@ li {
   color: var(--logoColor);
 }
 
+
 /* SM */
 @media screen and (min-width: 640px) {
 
@@ -820,7 +871,11 @@ li {
     width: 43.5%;
   }
 
-  /* Equipment section */
+  /* Review Section */
+  .review__swiper {
+    width: 80%;
+  }
+
 
   /* Footer  */
   .footer__top img {

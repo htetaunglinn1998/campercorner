@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/review.css">
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +40,71 @@
   </div>
 
   <div id="header__placeholder"></div>
+
+  <section id="review__section" class="review__section">
+    <div class="swiper review__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide review__slide">
+          <img src="./assets/reviews/1.png" alt="mock" class="review__portrait">
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde deleniti
+              cupiditate</span>
+            <span>animi ipsam inventore! Repellendus, corporis iure!</span>
+          </p>
+          <img src="./assets/quote.png" alt="quote" class="review__quote">
+          <p class="reviewer">Lewis Peter</p>
+          <p>Software Enginner</p>
+        </div>
+        <div class="swiper-slide review__slide">
+          <img src="./assets/reviews/2.png" alt="mock" class="review__portrait">
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde deleniti
+              cupiditate</span>
+            <span>animi ipsam inventore! Repellendus, corporis iure!</span>
+          </p>
+          <img src="./assets/quote.png" alt="quote" class="review__quote">
+          <p class="reviewer">David Tie</p>
+          <p>Artist - Singer</p>
+        </div>
+        <div class="swiper-slide review__slide">
+          <img src="./assets/reviews/3.png" alt="mock" class="review__portrait">
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde deleniti
+              cupiditate</span>
+            <span>animi ipsam inventore! Repellendus, corporis iure!</span>
+          </p>
+          <img src="./assets/quote.png" alt="quote" class="review__quote">
+          <p class="reviewer">Melia</p>
+          <p>Civil Enginner</p>
+        </div>
+        <div class="swiper-slide review__slide">
+          <img src="./assets/reviews/4.png" alt="mock" class="review__portrait">
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde deleniti
+              cupiditate</span>
+            <span>animi ipsam inventore! Repellendus, corporis iure!</span>
+          </p>
+          <img src="./assets/quote.png" alt="quote" class="review__quote">
+          <p class="reviewer">Emily Rose</p>
+          <p>Business woman</p>
+        </div>
+        <div class="swiper-slide review__slide">
+          <img src="./assets/reviews/5.png" alt="mock" class="review__portrait">
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde deleniti
+              cupiditate</span>
+            <span>animi ipsam inventore! Repellendus, corporis iure!</span>
+          </p>
+          <img src="./assets/quote.png" alt="quote" class="review__quote">
+          <p class="reviewer">Lisa Pink</p>
+          <p>Software Enginner</p>
+        </div>
+      </div>
+      <div class="swiper-button-next review__next"></div>
+      <div class="swiper-button-prev review__prev"></div>
+      <div class="swiper-pagination review__pagination"></div>
+    </div>
+  </section>
 
 
   <!-- Feed Back Section -->
@@ -98,7 +166,25 @@
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   <script>
+    var swiper = new Swiper(".review__swiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
     $(function () {
       $("#header__placeholder").load("header.html");
       $("#footer__placeholder").load("footer.html");

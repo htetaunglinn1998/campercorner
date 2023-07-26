@@ -2,6 +2,10 @@
     padding-top: 10rem;
 }
 
+.review__wrapper {
+    padding: 2rem 0;
+}
+
 /* Feed Back Section */
 button,
 input {

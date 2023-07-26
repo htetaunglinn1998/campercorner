@@ -699,10 +699,6 @@ li {
   background-color: var(--secondary);
 }
 
-.swiper-wrapper {
-  padding: 2rem 0;
-}
-
 .review__swiper {
   width: 95%;
 }

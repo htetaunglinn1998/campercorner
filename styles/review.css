@@ -1,18 +1,6 @@
-:root {
-    --primary: #0c2123;
-    --secondary: #eeeeee;
-    --third: #222831;
-    --logoColor: #0fa7ff;
-    --primaryFont: "Roboto", sans-serif;
-    --secondaryFont: "Oswald", sans-serif;
-    --customShadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    --roundedMd: 5px;
+.review__section {
+    padding-top: 10rem;
 }
-
-body {
-    font-size: 12px;
-}
-
 
 /* Feed Back Section */
 button,
@@ -24,7 +12,7 @@ input {
 
 .background {
     display: flex;
-    background: #EDF2F8;
+    background: var(--secondary);
     padding: 3rem 1rem;
 }
 

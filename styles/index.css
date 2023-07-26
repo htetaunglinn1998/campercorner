@@ -325,7 +325,7 @@ li {
 }
 
 .right__nav {
-  width: 270px;
+  width: 285px;
   display: flex;
   justify-content: end;
 }
@@ -714,6 +714,10 @@ li {
 
 .review__slide>* {
   margin-bottom: 1.2rem;
+}
+
+.review__slide p {
+  padding: 0 2rem;
 }
 
 .review__portrait {

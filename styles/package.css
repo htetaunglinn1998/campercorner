@@ -1,0 +1,130 @@
+:root {
+    --primary: #0c2123;
+    --secondary: #eeeeee;
+    --third: #161718;
+    --logoColor: #EA4E27;
+    --primaryFont: "Roboto", sans-serif;
+    --secondaryFont: "Oswald", sans-serif;
+    --customShadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --roundedMd: 5px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+}
+
+.package__section {
+    width: 80%;
+    margin: auto;
+    padding: 8rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package__heading {
+    color: var(--third);
+}
+
+.package__subheading {
+    margin: 1.5rem 0 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.package__card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--customShadow);
+}
+
+.package__card h3 {
+    font-size: 2rem;
+}
+
+.package__card ul {
+    margin-top: 1rem;
+}
+
+.buy__btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: var(--third);
+    text-align: center;
+    color: white;
+    margin: 1.5rem 0 1rem;
+}
+
+.beginner__card {}
+
+.pro__card {}
+
+.adventure__card {}
+
+.package__card p {
+    margin: 1rem 0;
+}
+
+
+.package__price {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.package__card ul>* {
+    margin-bottom: 0.5rem;
+}
+
+.fa-circle-check {
+    color: seagreen;
+}
+
+.fa-circle-xmark {
+    color: rgba(188, 188, 188, 0.885);
+}
+
+.check {
+    color: seagreen;
+}
+
+.xmark del {
+    color: rgb(188, 188, 188) !important;
+}
+
+.fa-circle-check,
+.fa-circle-xmark {
+    margin-right: 8px;
+}
+
+/* SM */
+@media screen and (min-width: 640px) {}
+
+/* MD */
+@media screen and (min-width: 768px) {
+    .card__section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* LG */
+@media screen and (min-width: 1024px) {
+    .package__card {
+        width: 27%;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1280px) {}

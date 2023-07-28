@@ -9,9 +9,11 @@
     --roundedMd: 5px;
 }
 
-.subtitle {
-    font-size: 0.8rem;
-    color: rgb(150, 150, 150);
+
+.package__container {
+    background-image: url(../assets/item__background2.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .package__section {
@@ -25,10 +27,13 @@
 
 .package__heading {
     color: var(--third);
+    font-size: 2rem;
 }
 
 .package__subheading {
-    margin: 1.5rem 0 1.8rem;
+    color: rgb(92, 92, 92);
+    margin: 1rem 0 3rem;
+    font-size: 0.8rem;
     text-align: center;
     font-weight: 500;
     font-size: 1.2rem;
@@ -55,6 +60,11 @@
     margin-top: 1rem;
 }
 
+.subtitle {
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+}
+
 .buy__btn {
     display: inline-block;
     width: 100%;
@@ -66,11 +76,19 @@
     margin: 1.5rem 0 1rem;
 }
 
-.beginner__card {}
 
-.pro__card {}
 
-.adventure__card {}
+.pro__card {
+    position: relative;
+}
+
+.pro__card img {
+    position: absolute;
+    width: 60px;
+    top: -15px;
+    right: -15px;
+}
+
 
 .package__card p {
     margin: 1rem 0;

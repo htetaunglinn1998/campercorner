@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingScreen.style.display = 'none'
   }
 
+  $(function () {
+    $('#header__placeholder').load('header.html')
+    $('#footer__placeholder').load('footer.html')
+  })
+
   // Call the hideLoadingScreen function when the content is fully loaded
   hideLoadingScreen()
 

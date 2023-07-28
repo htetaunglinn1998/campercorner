@@ -812,6 +812,10 @@ li {
   padding-top: 1.5rem;
 }
 
+.footer__bottom p {
+  text-align: center;
+}
+
 /* Scroll top */
 .scroll__top {
   position: fixed;

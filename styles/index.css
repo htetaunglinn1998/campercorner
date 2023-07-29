@@ -2,7 +2,7 @@
   --primary: #0c2123;
   --secondary: #eeeeee;
   --third: #161718;
-  --logoColor: #EA4E27;
+  --logoColor: #ea4e27;
   --primaryFont: "Roboto", sans-serif;
   --secondaryFont: "Oswald", sans-serif;
   --customShadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -146,9 +146,7 @@ li {
   }
 }
 
-
 /* -----Header Section----- */
-
 
 .header__section {
   position: fixed;
@@ -158,7 +156,7 @@ li {
   left: 0;
   right: 0;
   display: none;
-  background-color: rgb(34, 40, 49);
+  background-color: #b5b7ba5b;
   padding: 0.5rem 2rem;
   -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -367,8 +365,9 @@ li {
   padding: 5rem 10rem 2rem;
   display: flex;
   flex-direction: column;
-  background: url("../assets/hero__background.png");
+  background: url("../assets/hero__background.jpg");
   background-size: cover;
+  background-position: left;
   justify-content: center;
   align-items: center;
 }
@@ -377,7 +376,7 @@ li {
   min-width: 330px;
   height: fit-content;
   background-color: #ffffff29;
-  border-radius: 2rem;
+  border-radius: 10px;
   backdrop-filter: blur(2px);
   padding: 2rem;
   display: flex;
@@ -385,8 +384,13 @@ li {
   gap: 20px;
 }
 
+.logo__name {
+  color: var(--logoColor);
+}
+
 .intro__container p {
   opacity: 0.8;
+  color: rgb(40, 40, 40);
 }
 
 .intro__title {
@@ -502,6 +506,10 @@ li {
   color: var(--logoColor);
 }
 
+.review {
+  opacity: 50%;
+}
+
 .fa-star {
   color: var(--third);
 }
@@ -560,7 +568,7 @@ li {
 
 /* Equipment Section */
 .equipment__section {
-  background-image: url('../assets/item__background2.png');
+  background-image: url("../assets/item__background2.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -586,7 +594,7 @@ li {
 
 .grid__item {
   width: 100%;
-  background-image: url('../assets/item__background2.png');
+  background-image: url("../assets/item__background2.png");
   border-radius: 8px;
   box-shadow: var(--customShadow);
   padding: 25px;
@@ -684,7 +692,7 @@ li {
 
 .logo__slide {
   display: inline-block;
-  animation: slide 25s infinite linear;
+  animation: slide 29s infinite linear;
 }
 
 .logo__slide img {
@@ -717,7 +725,7 @@ li {
 
 .review__slide {
   text-align: center;
-  padding: 0 3rem;
+  padding: 1.5rem 3rem;
 }
 
 .review__slide>* {
@@ -725,7 +733,7 @@ li {
 }
 
 .review__slide p {
-  padding: 0 2rem;
+  padding: 0 15rem;
 }
 
 .review__portrait {
@@ -749,7 +757,6 @@ li {
   background-color: var(--logoColor) !important;
 }
 
-
 /* Subscribe section */
 .subscribe__section {
   position: relative;
@@ -772,7 +779,7 @@ li {
 .footer__section {
   width: 100%;
   padding: 1rem 4% 4rem;
-  background-color: rgb(34, 40, 49);
+  background-color: #b5b7ba5b;
   color: white;
 }
 
@@ -837,7 +844,6 @@ li {
   color: var(--logoColor);
 }
 
-
 /* SM */
 @media screen and (min-width: 640px) {
 
@@ -864,14 +870,15 @@ li {
   .hero__section {
     flex-direction: row;
     justify-content: start;
+    background-position: center;
   }
 
   .hero__section p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .hero__section h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .stock__container {
@@ -891,7 +898,6 @@ li {
   .review__swiper {
     width: 80%;
   }
-
 
   /* Footer  */
   .footer__top img {
@@ -922,11 +928,11 @@ li {
 
   /* hero section */
   .hero__section p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .hero__section h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   /* equipment section */
@@ -937,6 +943,16 @@ li {
 
 /* XL */
 @media screen and (min-width: 1280px) {
+
+  /* hero section */
+  .hero__section p {
+    font-size: 1.3rem;
+  }
+
+  .hero__section h1 {
+    font-size: 3rem;
+  }
+
 
   /* Equipment section */
   .equipment__grid {

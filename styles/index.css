@@ -586,6 +586,7 @@ li {
 }
 
 .equipment__grid {
+  min-height: 100px;
   width: 80%;
   display: grid;
   grid-template-columns: auto;
@@ -599,6 +600,15 @@ li {
   box-shadow: var(--customShadow);
   padding: 25px;
   transition: all 0.3s ease-out;
+}
+
+.grid__item button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--third);
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
 }
 
 .grid__item del {
@@ -894,6 +904,11 @@ li {
     width: 43.5%;
   }
 
+  /* Equipment section */
+  .equipment__grid {
+    grid-template-columns: auto auto auto;
+  }
+
   /* Review Section */
   .review__swiper {
     width: 80%;
@@ -938,6 +953,10 @@ li {
   /* equipment section */
   .equipment__section h2 {
     font-size: 2.3rem;
+  }
+
+  .equipment__grid {
+    grid-template-columns: auto auto auto auto;
   }
 }
 

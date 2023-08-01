@@ -1,174 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Funiture</title>
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funiture</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/furniture.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/furniture.css" />
 
-    <!-- Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Loader Section -->
-    <div class="loader__container" id="loader__container">
-      <div class="gooey">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Loader Section -->
+  <div class="loader__container" id="loader__container">
+    <div class="gooey">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </div>
 
-    <div id="header__placeholder"></div>
-    <section class="equipment__section">
-      <h2>Best Furniture In The Market</h2>
+  <div id="header__placeholder"></div>
+  <section class="equipment__section">
+    <h2>Best Furniture In The Market</h2>
 
-      <div class="equipment__grid">
-        <div class="grid__item">
-          <img src="./assets/furniture/5.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Portable steel based table set</a>
-          <p>Able to sit by four person. Easy to fold and carry.</p>
-          <p class="price"><span>$149</span><del>$234</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/2.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Portable steel+wood table set</a>
-          <p>Able to sit by four person. Easy to fold and carry.</p>
-          <p class="price"><span>$219</span><del>$264</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/3.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">High Fold Camping Chair</a>
-          <p>Able to use at both outdoor and indoor and handle 200kg.</p>
-          <p class="price"><span>$159</span><del>$199</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/4.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Outdoor BBQ high table</a>
-          <p>Able to use while cooking. Easy to clean up.</p>
-          <p class="price"><span>$134</span><del>$169</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/1.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Single Camping Outdoor Chair</a>
-          <p>Able to handle 200kg, easy to carry around, and easy to dry.</p>
-          <p class="price"><span>$249</span><del>$385</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/6.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Camping low Table Set</a>
-          <p>Able to handle 200kg, easy to carry around and water proof</p>
-          <p class="price"><span>$319</span><del>$365</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/7.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Single folding fishing chair</a>
-          <p>Able to handle 200kg, easy to carry around and water proof.</p>
-          <p class="price"><span>$359</span><del>$459</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-        <div class="grid__item">
-          <img src="./assets/furniture/8.png" alt="tent" class="stock__img" />
-          <a href="#" class="stock__title">Party Outdoor Table Set</a>
-          <p>Easy to dry, can handle 200kg each with full size tea table.</p>
-          <p class="price"><span>$469</span><del>$535</del></p>
-          <hr />
-          <div class="shop__container stock__buttons">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-            <p>Free Shipping</p>
-          </div>
-        </div>
-      </div>
-      <a href="./product.html" class="explore__btn"
-        >Load More<i class="fa-solid fa-arrow-right-long"></i
-      ></a>
-    </section>
-    <div id="footer__placeholder"></div>
+    <div class="equipment__grid" id="furnitureGrid"></div>
+    <a href="./product.html" class="explore__btn">Load More<i class="fa-solid fa-arrow-right-long"></i></a>
+  </section>
+  <div id="footer__placeholder"></div>
 
-    <!-- JQuery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- App JS -->
-    <script src="js/app.js"></script>
-  </body>
+  <!-- App JS -->
+  <script src="js/app.js"></script>
+</body>
+
 </html>

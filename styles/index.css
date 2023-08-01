@@ -157,6 +157,7 @@ li {
   right: 0;
   display: none;
   background-color: #b5b7ba5b;
+  backdrop-filter: blur(8px);
   padding: 0.5rem 2rem;
   -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);

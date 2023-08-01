@@ -65,6 +65,65 @@ const bestSellers = [
   }
 ]
 
+const furnitures = [
+  {
+    img: './assets/furniture/5.png',
+    title: 'Portable steel based table set',
+    description: 'Able to sit by four person. Easy to fold and carry.',
+    price: 149,
+    discount: 234
+  },
+  {
+    img: './assets/furniture/2.png',
+    title: 'Portable steel+wood table set',
+    description: 'Able to sit by four person. Easy to fold and carry.',
+    price: 219,
+    discount: 264
+  },
+  {
+    img: './assets/furniture/3.png',
+    title: 'High Fold Camping Chair',
+    description: 'Able to use at both outdoor and indoor and handle 200kg.',
+    price: 159,
+    discount: 199
+  },
+  {
+    img: './assets/furniture/4.png',
+    title: 'Outdoor BBQ high table',
+    description: 'Able to use while cooking. Easy to clean up.',
+    price: 134,
+    discount: 169
+  },
+  {
+    img: './assets/furniture/1.png',
+    title: 'Single Camping Outdoor Chair',
+    description: 'Able to handle 200kg, easy to carry around, and easy to dry.',
+    price: 249,
+    discount: 385
+  },
+  {
+    img: './assets/furniture/6.png',
+    title: 'Camping low Table Set',
+    description: 'Able to handle 200kg, easy to carry around and water proof',
+    price: 319,
+    discount: 365
+  },
+  {
+    img: './assets/furniture/7.png',
+    title: 'Single folding fishing chair',
+    description: 'Able to handle 200kg, easy to carry around and water proof.',
+    price: 359,
+    discount: 459
+  },
+  {
+    img: './assets/furniture/8.png',
+    title: 'Party Outdoor Table Set',
+    description: 'Easy to dry, can handle 200kg each with full size tea table.',
+    price: 469,
+    discount: 535
+  }
+]
+
 // Humbarger Menu Button
 function toggleMenu () {
   // Side Menu Show
@@ -151,11 +210,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add to equipment section
   let equipmentGrid = document.getElementById('equipmentGrid')
 
-  function bestSeller () {
-    equipmentGrid.innerHTML = bestSellers.map(item => {
-      const { id, img, title, description, price, discount } = item
-      return(
-        `<div class="grid__item">
+  function bestSellerDisplay () {
+    if (equipmentGrid) {
+      equipmentGrid.innerHTML = bestSellers
+        .map(item => {
+          const { id, img, title, description, price, discount } = item
+          return `<div class="grid__item">
         <img src=${img} alt="tent" class="stock__img">
         <a href="#" class="stock__title">${title}</a>
         <p class="review">${description}</p>
@@ -166,9 +226,40 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Free Shipping</p>
         </div>
       </div>`
-      )
-    }).join('')
+        })
+        .join('')
+    } else {
+      return
+    }
   }
 
-  bestSeller()
+  bestSellerDisplay()
+
+  // Add to equipment section
+  let furnitureGrid = document.getElementById('furnitureGrid')
+
+  function furnitureDisplay () {
+    if (furnitureGrid) {
+      furnitureGrid.innerHTML = furnitures
+        .map(item => {
+          const { img, title, description, price, discount } = item
+          return `<div class="grid__item">
+        <img src=${img} alt="tent" class="stock__img">
+        <a href="#" class="stock__title">${title}</a>
+        <p class="review">${description}</p>
+        <p class="price"><span>$${price}</span><del>$${discount}</del></p>
+        <hr>
+        <div class="shop__container stock__buttons">
+          <button onclick="addToCart(this);"><i class="fa-solid fa-cart-plus"></i>Shop Now</button>
+          <p>Free Shipping</p>
+        </div>
+      </div>`
+        })
+        .join('')
+    } else {
+      return
+    }
+  }
+
+  furnitureDisplay()
 })

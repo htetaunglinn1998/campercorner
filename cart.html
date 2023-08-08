@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
 
-
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -15,7 +16,18 @@
 </head>
 
 <body>
+    <section class="cart__container">
+        <h1 class="order__title">Order Summary</h1>
+        <div class="cart__items"></div>
 
+        <div class="cart__total">
+            <h2>Total Price: $<span id="totalPrice">0</span></h2>
+        </div>
+
+        <button id="checkoutBtn" class="checkout__btn" onclick="checkout();">Check Out</button>
+    </section>
+
+    <script src="js/addToCart.js"></script>
 </body>
 
 </html>

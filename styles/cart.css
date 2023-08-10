@@ -20,8 +20,10 @@
 
 .cart__item {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 2rem;
   margin-bottom: 0.5rem;
   background-color: var(--secondary);
   border-radius: 8px;
@@ -58,6 +60,16 @@
   margin: 0 5px;
 }
 
+.back__btn {
+  padding: 8px 40px;
+  border: 1px solid var(--logoColor);
+  background: transparent;
+  color: var(--logoColor);
+  box-shadow: var(--customShadow);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .checkout__btn {
   padding: 8px 40px;
   border: none;
@@ -71,3 +83,29 @@
 .checkout__hidden {
   display: none;
 }
+
+
+/* SM */
+@media screen and (min-width: 640px) {
+
+  /* Equipment section */
+  .equipment__grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+  .cart__item {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+/* LG */
+@media screen and (min-width: 1024px) {}
+
+/* XL */
+@media screen and (min-width: 1280px) {}

@@ -148,6 +148,18 @@ const furnitures = [
   }
 ]
 
+const porpularProduct = [
+  {
+    id: 100,
+    img: './assets/bestseller/1.png',
+    title: ' REI Co-op Base Camp 6',
+    description: 'Best quality yet reasonable price. Top choice for campers',
+    price: 275,
+    discount: 350,
+    count: 1
+  }
+]
+
 // Humbarger Menu Button
 function toggleMenu () {
   // Side Menu Show
@@ -317,6 +329,101 @@ document.addEventListener('DOMContentLoaded', () => {
 
   furnitureDisplay()
 })
+
+const porpularProductGrid = document.getElementById('popularProductGrid')
+
+function porpularProductDisplay () {
+  if (porpularProductGrid) {
+    porpularProductGrid.innerHTML = porpularProduct
+      .map(item => {
+        const { img, title, price, discount } = item
+        return `<div class="bestseller__container">
+
+        <div class="swiper__container">
+            <p class="bestseller__tag">Best Seller</p>
+            <!-- Swiper -->
+            <div class="swiper best__seller">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src=${img} alt="tent" class="bestseller__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/bestseller/2.png" alt="tent" class="bestseller__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/bestseller/3.png" alt="tent" class="bestseller__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/bestseller/4.png" alt="tent" class="bestseller__img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+        <!-- Best seller card section -->
+        <div class="bestseller__content">
+            <h2>Best Overall Camping Tent</h2>
+            <a href="#" class="tenttitle">
+                ${title}
+            </a>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#" class="review__link">3.9 | 160 reviews</a>
+            </div>
+            <div class="bestseller__detail">
+                <p>
+                    <span class="specs__bold">Specs</span>
+                </p>
+                <p>
+                    <span class="specs__bold">Floor area :</span>
+                    84 sq. ft.
+                </p>
+                <p>
+                    <span class="specs__bold">Weight :</span>
+                    20 lbs., 10 oz.
+                </p>
+                <p>
+                    <span class="specs__bold">Height :</span>
+                    74"
+                </p>
+                <p>
+                    <span class="specs__bold">Footprint included :</span>
+                    No
+                </p>
+                <p>
+                    <span class="specs__bold">Number of doors :</span>
+                    Two
+                </p>
+            </div>
+            <div>
+                <p class="price">
+                    <span>$${price}</span>
+                    <del>$${discount}</del>
+                </p>
+                <div class="shop__container">
+                    <button onClick='addToCart(${JSON.stringify(
+                      item
+                    )});'><i class="fa-solid fa-cart-plus"></i>Shop Now</button>
+                    <p></i>Free Shipping</p>
+                </div>
+            </div>
+
+        </div>
+    </div>`
+      })
+      .join('')
+  } else {
+    return
+  }
+}
+
+porpularProductDisplay()
 
 // Review from reset
 function resetForm () {

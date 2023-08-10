@@ -2,7 +2,6 @@ let cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
 const cartItemsSection = document.querySelector('.cart__items')
 const totalPriceSection = document.getElementById('totalPrice')
 const checkoutBtn = document.getElementById('checkoutBtn')
-const customAlertMessage = document.getElementById('customAlertMessage')
 
 function showCustomAlert (message) {
   customAlertMessage.textContent = message
@@ -96,4 +95,8 @@ function checkout () {
   setTimeout(() => {
     window.location.href = 'index.html'
   }, 1500)
+}
+
+function handleBack () {
+  window.history.back()
 }

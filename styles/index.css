@@ -541,8 +541,10 @@ li {
   gap: 1.25rem;
 }
 
-.shop__container a {
+.shop__container button {
   color: white;
+  border: none;
+  cursor: pointer;
   background-color: var(--third);
   border-radius: 8px;
   padding: 7px 10px;
@@ -801,7 +803,7 @@ li {
 }
 
 .review__slide p {
-  padding: 0 15rem;
+  padding: 0 0;
 }
 
 .review__portrait {
@@ -1016,6 +1018,11 @@ li {
   .equipment__grid {
     grid-template-columns: auto auto auto auto;
   }
+
+  /* Review Section */
+  .review__slide p {
+    padding: 0 7%;
+  }
 }
 
 /* XL */
@@ -1034,5 +1041,10 @@ li {
   /* Equipment section */
   .equipment__grid {
     grid-template-columns: auto auto auto auto;
+  }
+
+  /* Review Section */
+  .review__slide p {
+    padding: 0 15%;
   }
 }

@@ -84,96 +84,18 @@
                 </h1>
                 <p>Step into the untamed wilderness with Nomo J62. <br> Adventure awaits!</p>
                 <div class="intro__button__container">
-                    <a href="#" class="intro__button">Buy Now</a>
-                    <a href="#" class="intro__button">See More</a>
+                    <a href="#equipment__section" class="intro__button">Buy Now</a>
+                    <a href="./furniture.html" class="intro__button">See More</a>
                 </div>
             </div>
         </section>
 
 
         <!-- Best Seller Tent Section -->
-        <section class="sale__section">
-            <div class="bestseller__container">
-
-                <div class="swiper__container">
-                    <p class="bestseller__tag">Best Seller</p>
-                    <!-- Swiper -->
-                    <div class="swiper best__seller">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/bestseller/1.png" alt="tent" class="bestseller__img">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/bestseller/2.png" alt="tent" class="bestseller__img">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/bestseller/3.png" alt="tent" class="bestseller__img">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/bestseller/4.png" alt="tent" class="bestseller__img">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-
-
-                <!-- Best seller card section -->
-                <div class="bestseller__content">
-                    <h2>Best Overall Camping Tent</h2>
-                    <a href="#" class="tenttitle">
-                        REI Co-op Base Camp 6
-                    </a>
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#" class="review__link">3.9 | 160 reviews</a>
-                    </div>
-                    <div class="bestseller__detail">
-                        <p>
-                            <span class="specs__bold">Specs</span>
-                        </p>
-                        <p>
-                            <span class="specs__bold">Floor area :</span>
-                            84 sq. ft.
-                        </p>
-                        <p>
-                            <span class="specs__bold">Weight :</span>
-                            20 lbs., 10 oz.
-                        </p>
-                        <p>
-                            <span class="specs__bold">Height :</span>
-                            74"
-                        </p>
-                        <p>
-                            <span class="specs__bold">Footprint included :</span>
-                            No
-                        </p>
-                        <p>
-                            <span class="specs__bold">Number of doors :</span>
-                            Two
-                        </p>
-                    </div>
-                    <div>
-                        <p class="price">
-                            <span>$275</span>
-                            <del>$350</del>
-                        </p>
-                        <div class="shop__container">
-                            <a href="#"><i class="fa-solid fa-cart-plus"></i>Shop Now</a>
-                            <p></i>Free Shipping</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        <section id="popularProductGrid" class="sale__section"></section>
 
         <!-- Equipment Sections -->
-        <section class="equipment__section">
+        <section id="equipment__section" class="equipment__section">
             <h2>Popular Products</h2>
             <div class="equipment__grid" id="equipmentGrid"></div>
             <a href="./product.html" class="explore__btn">Explore More<i class="fa-solid fa-arrow-right-long"></i></a>
@@ -273,7 +195,7 @@
 
     <!-- App JS -->
     <script src="js/app.js"></script>
-    <script src="js/addToCart.js"></script>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

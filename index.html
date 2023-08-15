@@ -53,6 +53,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 </head>
 
 <body>
@@ -78,7 +81,7 @@
     <main>
         <!-- Hero Section -->
         <section class="hero__section">
-            <div class="intro__container parallax" data-speedx=".2" data-speedy="0.15">
+            <div class="intro__container parallax" data-aos="fade-up" data-speedx=".2" data-speedy="0.15">
                 <p>Hi Campers!</p>
                 <h1 class="intro__title">Meet the latest Product <br>From <span class="logo__name">Forest Queen</span>
                 </h1>
@@ -226,8 +229,11 @@
                 dynamicBullets: true,
             },
         });
+    </script>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

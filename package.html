@@ -15,7 +15,6 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/package.css">
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +27,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
@@ -54,65 +56,65 @@
       <h2 class="package__heading">All in one solution - packages</h2>
       <p class="package__subheading">Unbeatable Prices on 10 Complete Camping Equipment Packages!</p>
       <section class="card__section">
-        <div class="package__card beginner__card">
+        <div class="package__card beginner__card" data-aos="fade-up">
           <h3>Beginner</h3>
           <p class="subtitle">Start Your Outdoor Journey with our Beginner Camping Gear Set!</p>
           <p class="package__price">$350 <del>$400</del></p>
           <hr>
           <ul>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Tent</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Sleeping Bag</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Backpack</li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Portable Water Filter/Purifier</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Camping Stove</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Camping Cookware</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Headlamp/Flashlight</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>First Aid Kit</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Campfire Essentials</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Multi-tool/Knife</del></li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Tent</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Sleeping Bag</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Backpack</li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Portable Water Filter/Purifier</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Camping Stove</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Camping Cookware</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Headlamp/Flashlight</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>First Aid Kit</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Campfire Essentials</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Multi-tool/Knife</del></li>
           </ul>
           <button onClick="showCustomAlert('Thanks for shopping with us!');" class="buy__btn">Buy Now</button>
         </div>
 
 
-        <div class="package__card pro__card">
+        <div class="package__card pro__card" data-aos="fade-up" data-aos-delay="100">
           <img src="./assets/best__seller.png" alt="best__seller">
           <h3>Pro</h3>
           <p class="subtitle">Elevate Your Adventures with our Pro-Level Camping Equipment Bundle!</p>
           <p class="package__price">$550 <del>$700</del></p>
           <hr>
           <ul>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Tent</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Sleeping Bag</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Backpack</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Portable Water Filter/Purifier</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Camping Stove</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Camping Cookware</li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Headlamp/Flashlight</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>First Aid Kit</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Campfire Essentials</del></li>
-            <li class="xmark"><i class="fa-solid fa-circle-xmark"></i><del>Multi-tool/Knife</del></li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Tent</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Sleeping Bag</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Backpack</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Portable Water Filter/Purifier</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Camping Stove</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Camping Cookware</li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Headlamp/Flashlight</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>First Aid Kit</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Campfire Essentials</del></li>
+            <li class="xmark"><em class="fa-solid fa-circle-xmark"></em><del>Multi-tool/Knife</del></li>
           </ul>
           <button onClick="showCustomAlert('Thanks for shopping with us!');" class="buy__btn">Buy Now</button>
         </div>
 
 
-        <div class="package__card adventure__card">
+        <div class="package__card adventure__card" data-aos="fade-up" data-aos-delay="200">
           <h3>Adventure </h3>
           <p class="subtitle">Embark on Epic Expeditions with our Ultimate Adventure Gear Package!</p>
           <p class="package__price">$650 <del>$900</del></p>
           <hr>
           <ul>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Tent</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Sleeping Bag</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Backpack</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Portable Water Filter/Purifier</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Camping Stove</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Camping Cookware</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Headlamp/Flashlight</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>First Aid Kit</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Campfire Essentials</li>
-            <li class="check"><i class="fa-solid fa-circle-check"></i>Multi-tool/Knife</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Tent</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Sleeping Bag</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Backpack</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Portable Water Filter/Purifier</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Camping Stove</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Camping Cookware</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Headlamp/Flashlight</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>First Aid Kit</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Campfire Essentials</li>
+            <li class="check"><em class="fa-solid fa-circle-check"></em>Multi-tool/Knife</li>
           </ul>
           <button onClick="showCustomAlert('Thanks for shopping with us!');" class="buy__btn">Buy Now</button>
         </div>
@@ -129,6 +131,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -8,7 +8,6 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/product.css">
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +20,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
   <div id="customAlert" class="custom-alert">
-    <i class="fa-solid fa-cart-plus"></i>
+    <em class="fa-solid fa-cart-plus"></em>
     <p id="customAlertMessage"></p>
   </div>
   <!-- Loader Section -->
@@ -45,7 +47,7 @@
     <h2>Best Products In The Market</h2>
 
     <div class="equipment__grid" id="equipmentGrid"></div>
-    <a href="./product.html" class="explore__btn">Load More<i class="fa-solid fa-arrow-right-long"></i></a>
+    <a href="./product.html" class="explore__btn">Load More<em class="fa-solid fa-arrow-right-long"></em></a>
   </section>
   <div id="footer__placeholder"></div>
 
@@ -56,6 +58,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

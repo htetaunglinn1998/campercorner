@@ -1,26 +1,26 @@
-let cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
-const cartItemsSection = document.querySelector('.cart__items')
-const totalPriceSection = document.getElementById('totalPrice')
-const checkoutBtn = document.getElementById('checkoutBtn')
+let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+const cartItemsSection = document.querySelector(".cart__items");
+const totalPriceSection = document.getElementById("totalPrice");
+const checkoutBtn = document.getElementById("checkoutBtn");
 
-function showCustomAlert (message) {
-  customAlertMessage.textContent = message
-  customAlert.classList.add('show')
+function showCustomAlert(message) {
+  customAlertMessage.textContent = message;
+  customAlert.classList.add("show");
 
   setTimeout(() => {
-    customAlert.classList.remove('show')
-  }, 1500) // Display alert for 3 seconds
+    customAlert.classList.remove("show");
+  }, 1500); // Display alert for 3 seconds
 }
 
-function updateCart () {
-  localStorage.setItem('cartItems', JSON.stringify(cartItems))
+function updateCart() {
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   if (cartItems.length === 0) {
-    cartItemsSection.innerHTML = '<p>Your cart is empty.</p>'
-    checkoutBtn.classList.add('checkout__hidden')
+    cartItemsSection.innerHTML = "<p>Your cart is empty.</p>";
+    checkoutBtn.classList.add("checkout__hidden");
   } else {
     const cartHTML = cartItems
-      .map(item => {
+      .map((item) => {
         return `<div class="cart__item">
                     <img src="${item.img}" alt="${
           item.title
@@ -39,64 +39,64 @@ function updateCart () {
                             })">+</button>
                         </div>
                     </div>
-                </div>`
+                </div>`;
       })
-      .join('')
+      .join("");
 
-    cartItemsSection.innerHTML = cartHTML
+    cartItemsSection.innerHTML = cartHTML;
   }
 
   // Calculate total price
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.count * item.price,
     0
-  )
-  totalPriceSection.textContent = totalPrice
+  );
+  totalPriceSection.textContent = totalPrice;
 }
 
-updateCart()
+updateCart();
 
-function increaseCount (itemId) {
-  const item = cartItems.find(item => item.id === itemId)
+function increaseCount(itemId) {
+  const item = cartItems.find((item) => item.id === itemId);
   if (item) {
-    item.count += 1
+    item.count += 1;
     // Update the count element in the UI
     const countElement = document.querySelector(
       `[data-item-id="${itemId}"] span`
-    )
+    );
     if (countElement) {
-      countElement.textContent = item.count
+      countElement.textContent = item.count;
     }
   }
-  updateCart()
+  updateCart();
 }
 
-function decreaseCount (itemId) {
-  const item = cartItems.find(item => item.id === itemId)
+function decreaseCount(itemId) {
+  const item = cartItems.find((item) => item.id === itemId);
   if (item && item.count > 1) {
-    item.count -= 1
+    item.count -= 1;
     // Update the count element in the UI
     const countElement = document.querySelector(
       `[data-item-id="${itemId}"] span`
-    )
+    );
     if (countElement) {
-      countElement.textContent = item.count
+      countElement.textContent = item.count;
     }
   } else {
-    cartItems = cartItems.filter(cartItem => cartItem.id !== itemId)
+    cartItems = cartItems.filter((cartItem) => cartItem.id !== itemId);
   }
-  updateCart()
+  updateCart();
 }
 
-function checkout () {
-  showCustomAlert('Thanks for shopping with us!')
-  cartItems = []
-  updateCart()
+function checkout() {
+  showCustomAlert("Thanks for shopping with us!");
+  cartItems = [];
+  updateCart();
   setTimeout(() => {
-    window.location.href = 'index.html'
-  }, 1500)
+    window.location.href = "index.html";
+  }, 1500);
 }
 
-function handleBack () {
-  window.history.back()
+function handleBack() {
+  window.history.back();
 }
